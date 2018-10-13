@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- saved from url=(0155)chrome-extension://kdfieneakcjfaiglcfcgkidlkmlijjnh/content/popups/definitionPopup/index.html?title=Series&description=a%20serialized%20set%20of%20programs -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title></title>
+    <link rel="stylesheet" href="chrome-extension://kdfieneakcjfaiglcfcgkidlkmlijjnh/assets/fonts/gingericon/style.css">
+    <script src="chrome-extension://kdfieneakcjfaiglcfcgkidlkmlijjnh/content/popups/definitionPopup/main.js"></script>
+    <style>
+        *{box-sizing:border-box;}
+        html,body{padding:0;margin:0;font-family:Arial, Helvetica, sans-serif, sans;font-size:13px;color:white;}
+        a{color:#1EBED5;text-decoration:none;}
+        .ginger-dp{height:120px;width:240px;background:rgba(51,51,51,0.9);position:relative;border-radius:7px;}
+        .ginger-dp-close{position:absolute;top:4px;right:4px;height:10px;width:10px;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDIvMDUvMTXX7cO1AAAAiklEQVQYlY3PoQpCURCE4e+eaPFtTBZBTBfjPoRmH0WzeYMgCIIIFpNvY9BisagcLgpOnP13d6bJzCkWaCPiqlJm9rDFumCGIQ6Z2e9AO4wxbypjhAsmeHS9prP9HtxqKCKuzZdXo5f1gaD4U+XH6xMGdcG/yxRsusEj4o62urwvWOFcB4cKPmL5BLiuQeiPFlTOAAAAAElFTkSuQmCC');box-sizing: border-box;}
+        .ginger-dp-title{color:#1EBED5;font-size:15px;border-bottom:1px solid #1EBED5;line-height:24px;}
+        .ginger-dp-title>span{display:inline-block;max-width:160px;text-overflow:ellipsis;overflow:hidden;vertical-align:middle;}
+        .ginger-dp-title>a{margin-left:6px;display:inline-block;vertical-align:middle;background-repeat:no-repeat; background-position:center center;}
+        .ginger-dp-content{padding:7px 15px;background:none 216px 94px no-repeat;}
+        .ginger-dp-description{padding:7px 0; max-height: 54px; overflow: hidden;}
+        .ginger-dp-more{display:inline-block;}
+
+        .ginger-dp-title-translate{height:20px;width:20px;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDIvMDUvMTXX7cO1AAACKElEQVQ4jY3UW4hNYRQH8N+ZJjVRGqNc4vCAhhM1pRlGphxDSvGKKLwol3JpPCpPHuSWyyNKSEY8IIaOyV3KpZyM28vkMmFIDSMSD3sNu91M+V72/tb6/v+9/v+91pfTz8qXypOwAgtRg8+oxkdcxLHOYuF5FpfLkAzBLszFAdzFsCCpxjfUYy2uYktnsdDTh69IEY3BbXzHIbRgHFoxBWcxEpvjQz9wO3D/yPKl8lCUcAJjorprWIaqOFsV++vYHcStKAX+b2V7cCsqq43YZSzK2LI44tCAdjwIvFy+VJ6MO1gf5e/FM7zABoyKSrbiHfZhYihYh+2Bqc/lS+WdIaEOjfHVdjzGNHSFh2swIuL1aIqzN/AEXyswH/dTRKKyRszBUkzAcszDbKTbYjbuYX5FePQ7480nDNf/qol8dtVWYhAeYVUq8Uhi7JDY30zle/AST1PnH2JQpaRf6nAkldwR8sbHflUq/wpnJD9EKv+jAh0ykxBS3vcrkg+SqUivX+ioRBumS9pjZiTH4lTI65IYvFnSqG/RnCK6Gbi2ShwOoo0S/w7G8zVWYnQQbAviliA5LZmIk9iPhhzkS+XDIbU1KhocREci3ufZ73g/ip9YIpmKX53Fwuq+cdqEWZiKSxFrxvmMN+ewIPVeGxI3EbPZWSx8QTHKfhP+FHEcvQHuDUlNAX4flRUD/1/3WTW649mDGZKZvCJzn2Vboo90oJu2GxcMcNP+AVmYoDHFjjdfAAAAAElFTkSuQmCC')}
+        .ginger-dp-title-synonyms{height:20px;width:10px;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAATCAYAAABcFRdeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDIvMDUvMTXX7cO1AAAAqklEQVQokYWOwQ0CIRREH8S7awNkPXMQO9jQgR1tC5awJdgAsQPxwFlDA2oF60GIZIU4t5n3/2QEgHLBAzu+ukarjVAudMCDX20kYCoAwEigb8BeAl0DtvKPRFr7BNZF/opWd0K50AO3yuP279qhAYcSHoFDCVfAnM2iZRbKBQNcKrV7Ga32wLQAU7Tay2TGBRwBJEC0+g74BHzyyOI6V59yUML8ea7BH70B5K8ndaRTwTMAAAAASUVORK5CYII=')}
+        .ginger-dp-content{height:120px;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDIvMDUvMTXX7cO1AAAB5ElEQVQ4jY3UTYjOURQG8N+8XlKsLE0yi0lIjHxEJBTFQhaaJCsfnYWJwUI+IqJmITPI1N1MkUTkY6nIMIVSM02GJuVjIanZ2kzMsPjf4fV6J3NW/3vuPc95zv0/z60zTqSUGrEci3PqOfoi4lOt83U1AFagNS+/YlL+HsbcnDsfEYOVdaUqkDZcwQ2cwgf8xCje5wZP8TiltKsmo7yxBTvQgd3VjfAdnTiDm+iMiPu/GaWUVmMjTuSOe3EXKzEZU7AOj7AP83AEe/JdKudOh3AH+7EUByLiUhWbbnSnlBZFRH8m0IMWtNallJpwHdvwBrciYocJREppOj6joYRl6M2jlXBxIiAQEd/Qh6YyZuAt5uT93hqdz2JBDawH+ISGMqb5o5XxohFNFesy6jFQmXiHNXidc0vwsmqE7VUMN+Jhrl2FqyX0K2zwBCM4+B92FMIcRg/WRkR3KSJeK+5oIbrQnFJqHQ8hpXQMm3AZzfLPGdNRO07jeGbXnkV6Aa8UFlmmEOFWhWhv42Rm949FdmI7ziksUm3qEYUXE9rQNWaRvw6mlI5iM67hBdYr7DCax3+GDTiMloi4N1Zb6xmZn0eYiiF8UchjFmZiEB0R8bmy7h+gCsB6hQhn4wc+YiAihmqd/wUDdJUksI2zKgAAAABJRU5ErkJggg==');}
+    </style>
+</head>
+<body>
+<div class="ginger-dp">
+    <a href="chrome-extension://kdfieneakcjfaiglcfcgkidlkmlijjnh/content/popups/definitionPopup/index.html?title=Series&amp;description=a%20serialized%20set%20of%20programs#" class="ginger-dp-close"></a>
+    <div class="ginger-dp-content">
+        <div class="ginger-dp-title"><span id="dp-title">Series</span> <a class="ginger-dp-title-translate" href="chrome-extension://kdfieneakcjfaiglcfcgkidlkmlijjnh/content/popups/definitionPopup/index.html?title=Series&amp;description=a%20serialized%20set%20of%20programs#" title="Translate"></a><a href="chrome-extension://kdfieneakcjfaiglcfcgkidlkmlijjnh/content/popups/definitionPopup/index.html?title=Series&amp;description=a%20serialized%20set%20of%20programs#" title="Synonyms" class="ginger-dp-title-synonyms"></a></div>
+        <div class="ginger-dp-description" id="dp-description">a serialized set of programs</div>
+        <a class="ginger-dp-more" href="chrome-extension://kdfieneakcjfaiglcfcgkidlkmlijjnh/content/popups/definitionPopup/index.html?title=Series&amp;description=a%20serialized%20set%20of%20programs#">More...</a>
+    </div>
+</div>
+
+</body></html>
