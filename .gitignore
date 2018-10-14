@@ -1,0 +1,6 @@
+docs
+.*
+!.gitignore
+!.npmignore
+node_modules
+dist
